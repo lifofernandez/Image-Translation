@@ -11,7 +11,7 @@ do
 
   echo "Processing $file_name file.."
   # https://github.com/soimort/translate-shell
-  cat $f | ./trans -brief> $OUT_FOLDER/$file_name-TRN.txt
+  cat $f | ./trans -brief > $OUT_FOLDER/$file_name-TRN.txt
 
   # To try:
   # Feed tesseract with a font to compare with the one in the img

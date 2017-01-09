@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 # usage: Process some black and withe TIFF files with Tesseract
 
 IN_FOLDER=./tifs/*
