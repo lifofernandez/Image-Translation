@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# usage: process files from folder1 savin them to folder2
 
 
 #while getopts ":a:" opt; do
