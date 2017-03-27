@@ -1,7 +1,9 @@
 # Image Translation
-Some bash lines to extract text from images with Teserract (make shure you have it working) 
+Some bash lines to extract text from images with Teserract (make shure you have
+it working -for jpg/tif convertion you will also need ImageMagick)
 and then translate it using [git.io/trans](https://github.com/soimort/translate-shell)
 (included in vendor folder).
+
 ## Usage
 ```
 $ mkdir imgs tifs txts trns
