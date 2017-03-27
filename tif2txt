@@ -2,7 +2,7 @@
 # usage: Process some black and withe TIFF files with Tesseract
 
 IN_FOLDER=./tifs/*
-LANG=esp
+LANG=spa
 OUT_FOLDER=./txts
 
 for f in $IN_FOLDER
