@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 # usage: Process some black and withe TIFF files with Tesseract
 
-IN_FOLDER=./tifs/*
+IN_FOLDER=./txts/*
 LANG=deu
-OUT_FOLDER=./txts
+OUT_FOLDER=./trns
 
 for f in $IN_FOLDER
 do
   file_name=`basename $f`
 
-  echo "Processing $file_name file..."
-  # https://gist.github.com/henrik/1967035
-  tesseract -l $LANG $f $OUT_FOLDER/$file_name-OCR
+  echo "Processing $file_name file.."
+  # https://github.com/soimort/translate-shell
+  cat $f | ./vendor/trans -brief > $OUT_FOLDER/$file_name-TRN.txt
 
   # To try:
   # Feed tesseract with a font to compare with the one in the img
