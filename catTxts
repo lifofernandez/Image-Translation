@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+IN_FOLDER=./txts/*
+OUT_FILE=./txt_unidos
+
+for f in $IN_FOLDER
+do
+  file_name=`basename $f`
+
+  echo "Processing $file_name file.."
+  # https://github.com/soimort/translate-shell
+  cat $f >> $OUT_FILE 
+
+done
